@@ -1,32 +1,32 @@
 <template>
-  <section class="relative py-16 md:py-20 lg:py-24 px-6 bg-gradient-to-br from-rose-50 via-purple-50 to-indigo-100 overflow-hidden">
+  <section class="relative py-16 md:py-20 lg:py-24 px-6 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100 overflow-hidden">
     <!-- Decorative Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <!-- Top Right Circle -->
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-br from-teal-400/20 to-emerald-400/20 rounded-full blur-3xl"></div>
       
       <!-- Bottom Left Circle -->
-      <div class="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-gradient-to-tr from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-gradient-to-tr from-cyan-400/20 to-teal-400/20 rounded-full blur-3xl"></div>
       
       <!-- Center Accent -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-violet-300/10 to-fuchsia-300/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-emerald-300/10 to-teal-300/10 rounded-full blur-3xl"></div>
       
       <!-- Floating Decorative Shapes -->
-      <div class="absolute top-20 left-[10%] w-20 h-20 bg-gradient-to-br from-pink-300/30 to-rose-300/30 rounded-2xl rotate-12 blur-xl"></div>
-      <div class="absolute top-40 right-[15%] w-32 h-32 bg-gradient-to-br from-purple-300/30 to-indigo-300/30 rounded-full blur-2xl"></div>
-      <div class="absolute bottom-32 left-[20%] w-24 h-24 bg-gradient-to-br from-blue-300/30 to-cyan-300/30 rounded-3xl -rotate-12 blur-xl"></div>
-      <div class="absolute bottom-48 right-[25%] w-16 h-16 bg-gradient-to-br from-violet-300/40 to-purple-300/40 rounded-full blur-lg"></div>
+      <div class="absolute top-20 left-[10%] w-20 h-20 bg-gradient-to-br from-emerald-300/30 to-teal-300/30 rounded-2xl rotate-12 blur-xl"></div>
+      <div class="absolute top-40 right-[15%] w-32 h-32 bg-gradient-to-br from-teal-300/30 to-cyan-300/30 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-32 left-[20%] w-24 h-24 bg-gradient-to-br from-cyan-300/30 to-blue-300/30 rounded-3xl -rotate-12 blur-xl"></div>
+      <div class="absolute bottom-48 right-[25%] w-16 h-16 bg-gradient-to-br from-emerald-300/40 to-teal-300/40 rounded-full blur-lg"></div>
     </div>
 
     <div class="max-w-3xl mx-auto relative z-10">
       <!-- Section Header -->
       <div class="text-center mb-10 md:mb-12">
-        <div class="inline-flex items-center justify-center w-16 h-16 mb-6 bg-gradient-to-br from-pink-500 to-violet-600 rounded-2xl shadow-xl">
+        <div class="inline-flex items-center justify-center w-16 h-16 mb-6 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl shadow-xl">
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
           </svg>
         </div>
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-900 via-violet-900 to-indigo-900 bg-clip-text text-transparent mb-4">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-emerald-900 via-teal-900 to-cyan-900 bg-clip-text text-transparent mb-4">
           Jetzt spenden
         </h2>
         <p class="text-lg md:text-xl text-gray-700 font-medium">
@@ -39,7 +39,7 @@
         <!-- Name Field -->
         <div>
           <label for="name" class="block text-sm font-bold text-gray-800 mb-2">
-            Name <span class="text-rose-600">*</span>
+            Name <span class="text-emerald-600">*</span>
           </label>
           <input
             id="name"
@@ -48,7 +48,7 @@
             class="w-full px-4 py-3 border-2 rounded-xl text-base transition-all duration-200 focus:outline-none focus:ring-4 bg-white/80"
             :class="errors.name 
               ? 'border-red-500 focus:border-red-500 focus:ring-red-100' 
-              : 'border-gray-200 focus:border-violet-500 focus:ring-violet-100'"
+              : 'border-gray-200 focus:border-emerald-500 focus:ring-emerald-100'"
             placeholder="Ihr vollständiger Name"
             @input="clearError('name')"
           />
@@ -70,7 +70,7 @@
         <!-- Email Field -->
         <div>
           <label for="email" class="block text-sm font-bold text-gray-800 mb-2">
-            E-Mail <span class="text-rose-600">*</span>
+            E-Mail <span class="text-emerald-600">*</span>
           </label>
           <input
             id="email"
@@ -79,7 +79,7 @@
             class="w-full px-4 py-3 border-2 rounded-xl text-base transition-all duration-200 focus:outline-none focus:ring-4 bg-white/80"
             :class="errors.email 
               ? 'border-red-500 focus:border-red-500 focus:ring-red-100' 
-              : 'border-gray-200 focus:border-violet-500 focus:ring-violet-100'"
+              : 'border-gray-200 focus:border-emerald-500 focus:ring-emerald-100'"
             placeholder="ihre.email@beispiel.de"
             @input="clearError('email')"
           />
@@ -101,10 +101,10 @@
         <!-- Amount Field -->
         <div>
           <label for="amount" class="block text-sm font-bold text-gray-800 mb-2">
-            Spendenbetrag <span class="text-rose-600">*</span>
+            Spendenbetrag <span class="text-emerald-600">*</span>
           </label>
           <div class="relative">
-            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-violet-600 font-bold text-base pointer-events-none">
+            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-600 font-bold text-base pointer-events-none">
               €
             </span>
             <input
@@ -116,7 +116,7 @@
               class="w-full pl-10 pr-4 py-3 border-2 rounded-xl text-base transition-all duration-200 focus:outline-none focus:ring-4 bg-white/80"
               :class="errors.amount 
                 ? 'border-red-500 focus:border-red-500 focus:ring-red-100' 
-                : 'border-gray-200 focus:border-violet-500 focus:ring-violet-100'"
+                : 'border-gray-200 focus:border-emerald-500 focus:ring-emerald-100'"
               placeholder="Mindestens 5"
               @input="clearError('amount')"
             />
@@ -143,8 +143,8 @@
               type="button"
               class="px-4 py-2 border-2 rounded-lg text-sm font-bold transition-all duration-200 hover:scale-105"
               :class="formData.amount === quickAmount 
-                ? 'bg-gradient-to-r from-violet-600 to-purple-600 border-transparent text-white shadow-lg shadow-violet-300/50' 
-                : 'bg-white/80 border-gray-200 text-gray-700 hover:border-violet-400 hover:text-violet-700 hover:bg-violet-50'"
+                ? 'bg-gradient-to-r from-emerald-600 to-teal-600 border-transparent text-white shadow-lg shadow-emerald-300/50' 
+                : 'bg-white/80 border-gray-200 text-gray-700 hover:border-emerald-400 hover:text-emerald-700 hover:bg-emerald-50'"
               @click="selectQuickAmount(quickAmount)"
             >
               {{ quickAmount }} €
@@ -158,7 +158,7 @@
             <input
               v-model="formData.newsletter"
               type="checkbox"
-              class="w-5 h-5 mt-0.5 rounded border-2 border-gray-300 text-violet-600 focus:ring-4 focus:ring-violet-100 transition-all duration-200 cursor-pointer"
+              class="w-5 h-5 mt-0.5 rounded border-2 border-gray-300 text-emerald-600 focus:ring-4 focus:ring-emerald-100 transition-all duration-200 cursor-pointer"
             />
             <span class="text-sm text-gray-700 leading-relaxed group-hover:text-gray-900 transition-colors font-medium">
               Ich möchte den Newsletter erhalten und über zukünftige Projekte informiert werden.
@@ -169,10 +169,10 @@
         <!-- Submit Button -->
         <button
           type="submit"
-          class="relative w-full mt-8 px-6 py-4 bg-gradient-to-r from-pink-600 via-purple-600 to-violet-600 text-white text-lg font-bold rounded-xl shadow-xl shadow-purple-300/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-400/60 hover:-translate-y-1 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-purple-300 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-xl overflow-hidden"
+          class="relative w-full mt-8 px-6 py-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white text-lg font-bold rounded-xl shadow-xl shadow-emerald-300/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-400/60 hover:-translate-y-1 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-emerald-300 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-xl overflow-hidden"
           :disabled="isSubmitting"
         >
-          <div class="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-violet-500 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
           <span v-if="!isSubmitting" class="relative flex items-center justify-center gap-2">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -189,7 +189,7 @@
         </button>
 
         <p class="text-center text-sm text-gray-600 mt-4 font-medium">
-          <span class="text-rose-600">*</span> Pflichtfelder
+          <span class="text-emerald-600">*</span> Pflichtfelder
         </p>
       </form>
     </div>
